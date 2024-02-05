@@ -18,10 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/g/Documents/Dotnet/EmployeeMgmt
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/g/Documents/Dotnet/EmployeeMgmt/Configuration/EmployeeConfiguration.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Q29uZmlndXJhdGlvbi9FbXBsb3llZUNvbmZpZ3VyYXRpb24uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/g/Documents/Dotnet/EmployeeMgmt/Views/Company/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

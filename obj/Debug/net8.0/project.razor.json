@@ -19349,11 +19349,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/g/Documents/Dotnet/EmployeeMgmt/Configuration/EmployeeConfiguration.cshtml",
-      "TargetPath": "Configuration\\EmployeeConfiguration.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/g/Documents/Dotnet/EmployeeMgmt/Views/Employee/Add.cshtml",
       "TargetPath": "Views\\Employee\\Add.cshtml",
       "FileKind": "mvc"
