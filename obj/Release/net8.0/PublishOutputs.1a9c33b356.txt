@@ -1,0 +1,12 @@
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/EmployeeMgmt
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/appsettings.Development.json
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/appsettings.json
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/EmployeeMgmt.dll
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/EmployeeMgmt.deps.json
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/EmployeeMgmt.runtimeconfig.json
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/EmployeeMgmt.pdb
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/Microsoft.EntityFrameworkCore.dll
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/Microsoft.EntityFrameworkCore.Relational.dll
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/Npgsql.dll
+/home/g/Documents/Dotnet/EmployeeMgmt/bin/Release/net8.0/publish/Npgsql.EntityFrameworkCore.PostgreSQL.dll
