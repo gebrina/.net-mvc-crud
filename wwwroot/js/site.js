@@ -1,4 +1,19 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const navbar = document.querySelector("nav");
+const allLinks = navbar.querySelectorAll("a");
+let activeLink = JSON.parse(localStorage.getItem("activeLink")) ?? "Home";
 
-// Write your JavaScript code.
+const handleActiveElement = (event) => {
+  const currentElement = event?.target;
+  allLinks.forEach((link) => {
+    if (currentElement) {
+      link === currentElement &&
+        localStorage.setItem("activeLink", JSON.stringify(link.textContent));
+    } else {
+      link.text === activeLink && link.classList.add("active");
+    }
+  });
+};
+
+handleActiveElement();
+
+navbar.addEventListener("click", handleActiveElement);
