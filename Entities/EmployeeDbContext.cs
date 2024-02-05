@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using EmployeeMgmt.Models;
+using EmployeeMgmt.Configuration;
 
 namespace EmployeeMgmt.Entities
 {
@@ -13,7 +14,10 @@ namespace EmployeeMgmt.Entities
         } 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-      
+              modelBuilder.Entity<Employee>().HasIndex(e=>e.PhoneNumber).IsUnique(true);
+              modelBuilder.Entity<Company>().HasIndex(c=>c.Name).IsUnique(true);
+              modelBuilder.ApplyConfiguration(new CompanyConfiguration());
+              modelBuilder.ApplyConfiguration(new EmployeeConfiguration());
         }
 
         public DbSet<Employee> Employees {get;set;}
