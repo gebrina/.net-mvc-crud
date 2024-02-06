@@ -1,32 +1,34 @@
 @model EmployeeMgmt.Models.Employee;
-
+@{
+  ViewData["Title"]="New Employee";
+}
 
 <div class="container">
-   <div class="col-md-6 shadow  p-4  mx-auto">
+   <div class="col-md-6 shadow p-4  mx-auto">
      <h1 class="text-primary text-center">New Employee</h1>
     <form asp-action="Add" method="post">
         <div class="form-group">
             <label asp-for="FristName">First Name</label>
-            <input class="form-control" asp-for="FristName" type="text">
+            <input class="form-control bg-transparent" asp-for="FristName" type="text">
         </div>
 
         <div class="form-group mt-2">
             <label asp-for="LastName">Last Name</label>
-            <input class="form-control" asp-for="LastName" type="text">
+            <input class="form-control bg-transparent" asp-for="LastName" type="text">
         </div>
    
         <div class="form-group mt-2">
             <label asp-for="Position">Position</label>
-            <input class="form-control" asp-for="Position" type="text">
+            <input class="form-control bg-transparent" asp-for="Position" type="text">
         </div>
 
         <div class="form-group mt-2">
             <label asp-for="PhoneNumber">Phone Number</label>
-            <input class="form-control" asp-for="PhoneNumber" type="text">
+            <input class="form-control bg-transparent" asp-for="PhoneNumber" type="text">
         </div>
          <div class="form-group mt-3">
-           <select asp-for="Company" class="form-control">
-            <option value="null">Select Company</option>
+           <select asp-for="Company" class="form-control bg-transparent">
+            <option  class="bg-transparent" value="null">Select Company</option>
             @foreach(var company in ViewBag.compaines)
             {
              <option value="@company.CompanyId">@company.Name</option>
