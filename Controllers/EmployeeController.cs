@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using EmployeeMgmt.Entities;
 using EmployeeMgmt.Models;
 
@@ -9,7 +10,7 @@ namespace EmployeeMgmt.Controllers
       
        public IActionResult Index()
        {
-        var employees = context.Employees;
+        var employees = context.Employees.Include(e=>e.Company);
         Console.WriteLine(employees.Count());
         return View(employees);
        }
