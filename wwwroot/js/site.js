@@ -4,6 +4,9 @@ let activeLink = JSON.parse(localStorage.getItem("activeLink")) ?? "Home";
 
 const handleActiveElement = (event) => {
   const currentElement = event?.target;
+  if (activeLink !== location.pathname.substring(1) && !currentElement) {
+    location.href = location.origin + "/" + activeLink;
+  }
   allLinks.forEach((link) => {
     if (currentElement) {
       link === currentElement &&

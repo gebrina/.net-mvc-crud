@@ -13,12 +13,12 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/imgs/4_Performing_CRUD_operations_using_Entity_Framework.pdf",
-      "PackagePath": "staticwebassets/imgs/4_Performing_CRUD_operations_using_Entity_Framework.pdf"
-    },
-    {
       "Id": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/imgs/hi-tech.jpg",
       "PackagePath": "staticwebassets/imgs/hi-tech.jpg"
+    },
+    {
+      "Id": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/imgs/logo.jpg",
+      "PackagePath": "staticwebassets/imgs/logo.jpg"
     },
     {
       "Id": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/js/site.js",

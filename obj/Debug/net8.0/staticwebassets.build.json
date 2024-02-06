@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lKAb2+05QWlDhPreR6rH6mVlUqmxjTPZMtpmtWU/XKA=",
+  "Hash": "tfQdgBtywkch8UFjdbA+9jHWTq8DLMKUSzKhLbEpmRg=",
   "Source": "EmployeeMgmt",
   "BasePath": "_content/EmployeeMgmt",
   "Mode": "Default",
@@ -93,25 +93,6 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/imgs/4_Performing_CRUD_operations_using_Entity_Framework.pdf",
-      "SourceId": "EmployeeMgmt",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/",
-      "BasePath": "_content/EmployeeMgmt",
-      "RelativePath": "imgs/4_Performing_CRUD_operations_using_Entity_Framework.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/4_Performing_CRUD_operations_using_Entity_Framework.pdf"
-    },
-    {
       "Identity": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/imgs/hi-tech.jpg",
       "SourceId": "EmployeeMgmt",
       "SourceType": "Discovered",
@@ -129,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/imgs/hi-tech.jpg"
+    },
+    {
+      "Identity": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/imgs/logo.jpg",
+      "SourceId": "EmployeeMgmt",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/",
+      "BasePath": "_content/EmployeeMgmt",
+      "RelativePath": "imgs/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/imgs/logo.jpg"
     },
     {
       "Identity": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/js/site.js",
