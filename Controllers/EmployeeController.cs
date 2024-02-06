@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using EmployeeMgmt.Entities;
+using EmployeeMgmt.Models;
 
 namespace EmployeeMgmt.Controllers
 {
@@ -19,6 +20,16 @@ namespace EmployeeMgmt.Controllers
         ViewBag.compaines=compaines;
         return View();
        }
+      
+      [HttpPost]
+      public IActionResult Add(Employee employee)
+      {
+        if(ModelState.IsValid) return RedirectToAction(nameof(Index));
+        
+        var compaines = context.Companies;
+        ViewBag.compaines=compaines;
+        return View();
+      }
 
        public IActionResult Edit()
        {
