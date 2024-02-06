@@ -1,7 +1,29 @@
+@model IEnumerable<EmployeeMgmt.Models.Employee>;
+
 @{
   ViewData["Title"] = "Employees";
 }
 
 <div>
   <h1>All Employees</h1>
+  <div class="table-responsive">
+    <table class="table-hover table stripped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach(Employee employee in Model){
+          <td>@employee.Id</td>
+          <td>@employee.FristName</td>
+          <td>@employee.LastName</td>
+          <td>@employee.PhoneNumber</td>
+        }
+      </tbody>
+    </table>
+  </div>
 </div>

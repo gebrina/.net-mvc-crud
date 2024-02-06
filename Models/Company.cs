@@ -16,6 +16,6 @@ public class Company
     [Column(name:"address",TypeName ="varchar(255)")]
     public string Address {get;set;} = string.Empty;
 
-    public ICollection<Employee> Employees {get;set;} = new List<Employee>();
+    public ICollection<Employee>? Employees {get;set;}
 }
 }

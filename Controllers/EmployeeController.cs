@@ -1,12 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
+using EmployeeMgmt.Entities;
 
 namespace EmployeeMgmt.Controllers
 {
     public class EmployeeController:Controller{
-       
+      private EmployeeDbContext context  = new();
+      
        public IActionResult Index()
        {
-        return View();
+        var employees = context.Employees;
+        Console.WriteLine(employees.Count());
+        return View(employees);
        }
 
        public IActionResult Add()
