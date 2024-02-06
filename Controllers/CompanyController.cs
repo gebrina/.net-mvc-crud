@@ -1,12 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
+using EmployeeMgmt.Entities;
 
 namespace EmployeeMgmt.Controllers
 {
     public class CompanyController:Controller{
-       
+       private EmployeeDbContext context = new();
+
        public IActionResult Index()
        {
-        return View();
+        var companies = context.Companies;
+        return View(companies);
        }
 
        public IActionResult Create()

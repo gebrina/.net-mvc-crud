@@ -18,7 +18,8 @@
         </tr>
       </thead>
       <tbody>
-        @foreach(Employee employee in Model){
+        @foreach(Employee employee in Model)
+        {
          <tr>
           <td title="@employee.Id">@employee.Id.ToString().Substring(0,20)...</td>
           <td>@employee.FristName</td>
