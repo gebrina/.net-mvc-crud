@@ -15,6 +15,8 @@ namespace EmployeeMgmt.Controllers
 
        public IActionResult Add()
        {
+        var compaines = context.Companies;
+        ViewBag.compaines=compaines;
         return View();
        }
 

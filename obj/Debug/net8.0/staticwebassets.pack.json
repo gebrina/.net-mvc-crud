@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets/imgs/logo.jpg"
     },
     {
+      "Id": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/imgs/redux-book.pdf",
+      "PackagePath": "staticwebassets/imgs/redux-book.pdf"
+    },
+    {
       "Id": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

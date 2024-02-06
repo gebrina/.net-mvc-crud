@@ -1,12 +1,24 @@
+@model EmployeeMgmt.Models.Company;
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Company</title>
-</head>
-<body class="container">
-    <h1 class="text-danger fs-1">Create Company</h1>
-</body>
-</html>
+@{
+    ViewData["Title"] ="New Company";
+}
+
+<div class="container">
+   <div class="col-md-6 shadow  p-4  mx-auto">
+     <h1 class="text-primary text-center">New Company</h1>
+    <form asp-action="Add" method="post">
+        <div class="form-group">
+            <label asp-for="Name">Name</label>
+            <input class="form-control" asp-for="Name" type="text">
+        </div>
+
+        <div class="form-group my-4">
+            <label asp-for="Address">Address</label>
+            <input class="form-control" asp-for="Address" type="text">
+        </div>
+
+       <button class="btn w-100 btn-primary">Save</button>
+    </form>
+   </div>
+</div>

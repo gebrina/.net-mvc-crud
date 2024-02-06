@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tfQdgBtywkch8UFjdbA+9jHWTq8DLMKUSzKhLbEpmRg=",
+  "Hash": "Cl451dwT8DSvmNt7OjgWCEIXS/ZsS+NChTOOWvn8Knw=",
   "Source": "EmployeeMgmt",
   "BasePath": "_content/EmployeeMgmt",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/imgs/logo.jpg"
+    },
+    {
+      "Identity": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/imgs/redux-book.pdf",
+      "SourceId": "EmployeeMgmt",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/",
+      "BasePath": "_content/EmployeeMgmt",
+      "RelativePath": "imgs/redux-book.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/imgs/redux-book.pdf"
     },
     {
       "Identity": "/home/g/Documents/Dotnet/EmployeeMgmt/wwwroot/js/site.js",
