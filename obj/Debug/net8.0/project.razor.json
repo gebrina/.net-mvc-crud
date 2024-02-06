@@ -19334,6 +19334,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/g/Documents/Dotnet/EmployeeMgmt/Views/Company/Add.cshtml",
+      "TargetPath": "Views\\Company\\Add.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/g/Documents/Dotnet/EmployeeMgmt/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -19351,11 +19356,6 @@
     {
       "FilePath": "/home/g/Documents/Dotnet/EmployeeMgmt/Views/Employee/Add.cshtml",
       "TargetPath": "Views\\Employee\\Add.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/g/Documents/Dotnet/EmployeeMgmt/Views/Company/Create.cshtml",
-      "TargetPath": "Views\\Company\\Create.cshtml",
       "FileKind": "mvc"
     },
     {

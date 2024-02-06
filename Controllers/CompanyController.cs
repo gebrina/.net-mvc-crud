@@ -12,7 +12,7 @@ namespace EmployeeMgmt.Controllers
         return View(companies);
        }
 
-       public IActionResult Create()
+       public IActionResult Add()
        {
         return View();
        }
