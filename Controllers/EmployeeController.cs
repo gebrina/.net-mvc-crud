@@ -22,5 +22,9 @@ namespace EmployeeMgmt.Controllers
        {
         return View();
        }
+
+       public IActionResult Delete(){
+        return RedirectToAction(nameof(Index));
+       }
     }
 }
