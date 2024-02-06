@@ -6,16 +6,17 @@ const handleActiveElement = (event) => {
   const currentElement = event?.target;
   const paths = location.pathname.substring(1).split("/");
 
-  if (activeLink !== location.pathname.substring(1) && !paths[0]) {
-    location.href = location.origin + "/" + activeLink;
-  }
-
   allLinks.forEach((link) => {
     if (currentElement) {
       link === currentElement &&
         localStorage.setItem("activeLink", JSON.stringify(link.textContent));
     } else {
-      link.text === activeLink && link.classList.add("active");
+      if (paths[0] === activeLink) {
+        link.text === activeLink && link.classList.add("active");
+      } else if (link.text === "Home" || link.text === " ") {
+        link.classList.add("active");
+        localStorage.removeItem("activeLink");
+      }
     }
   });
 };
