@@ -39,23 +39,10 @@ namespace EmployeeMgmt.Controllers
       [HttpGet]
       public IActionResult Edit(string emp_id)
        { 
-        Console.WriteLine(emp_id);
-        return View();
-       }
+        var employee = context.Employees.FirstOrDefault(employee=>employee.Id==new Guid(emp_id));
+        ViewBag.compaines = context.Companies;
 
-       [HttpPost]
-       public IActionResult Edit(Employee employee)
-       {
-        if(ModelState.IsValid){
-          var savedEmployee = context.Employees.FirstOrDefault(e=>e.Id.Equals(employee.Id));
-          if(savedEmployee==null) return View();
-          context.Employees.Update(employee);
-          context.SaveChanges();
-
-          return RedirectToAction(nameof(Index));
-        }
-
-        return View();
+        return View(employee);
        }
 
        public IActionResult Delete(){

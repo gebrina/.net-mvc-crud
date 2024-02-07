@@ -1,5 +1,46 @@
+@model EmployeeMgmt.Models.Employee;
 
+@{
+  ViewData["Title"] = "Edit Employee";
+}
 
-<body class="container">
-  <h1 class="text-info">Edit Employee</h1>
-</body>
+<div class="container">
+   <div class="col-md-6 shadow p-4  mx-auto">
+     
+     <h1 class="text-primary text-center">Edit Employee</h1>
+     <form asp-controller="Employee" asp-action="Add" method="post">
+        <div class="form-group">
+            <label asp-for="FristName">First Name</label>
+            <input  class="form-control bg-transparent" asp-for="FristName" type="text">
+            <span class="bg-danger text-light  w-25 rounded" asp-validation-for="FristName"></span>
+        </div>
+
+        <div class="form-group mt-2">
+            <label asp-for="LastName">Last Name</label>
+            <input class="form-control bg-transparent" asp-for="LastName" type="text"/>
+            <span class="bg-danger text-light w-50 w-25 rounded" asp-validation-for="LastName"></span>
+        </div>
+   
+        <div class="form-group mt-2">
+            <label asp-for="Position">Position</label>
+            <input class="form-control bg-transparent" asp-for="Position" type="text"/>
+            <span class="bg-danger text-light w-50 w-25 rounded" asp-validation-for="Position"></span>
+        </div>
+
+        <div class="form-group mt-2">
+            <label asp-for="PhoneNumber">Phone Number</label>
+            <input class="form-control bg-transparent" asp-for="PhoneNumber" type="text">
+        </div>
+         <div class="form-group mt-3">
+           <select asp-for="CompanyId" class="form-control bg-transparent">
+            <option  class="bg-transparent" value="null">Select Company</option>
+            @foreach(var company in ViewBag.compaines)
+            {
+             <option value="@company.CompanyId">@company.Name</option>
+            }
+           </select>
+        </div>
+       <button class="btn mt-2 d-block w-100  btn-primary">Save</button>
+    </form>
+   </div>
+</div>
