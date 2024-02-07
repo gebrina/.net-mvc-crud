@@ -39,12 +39,26 @@ namespace EmployeeMgmt.Controllers
       [HttpGet]
       public IActionResult Edit(string emp_id)
        { 
-        var employee = context.Employees.FirstOrDefault(employee=>employee.Id==new Guid(emp_id));
+        var employee = context.Employees.Include(e=>e.Company).FirstOrDefault(employee=>employee.Id==new Guid(emp_id));
         ViewBag.compaines = context.Companies;
 
         return View(employee);
        }
 
+       [HttpPost]
+       public IActionResult Edit(Employee employee){
+         if(ModelState.IsValid)
+         {
+          context.Employees.Update(employee);
+          context.SaveChanges();
+          return RedirectToAction(nameof(Index));
+         }
+         
+        var employeeTobeUpdated = context.Employees.FirstOrDefault(emp=>emp.Id==employee.Id);
+        ViewBag.compaines = context.Companies;
+        
+         return View(employeeTobeUpdated);
+       }
        public IActionResult Delete(){
         return RedirectToAction(nameof(Index));
        }
