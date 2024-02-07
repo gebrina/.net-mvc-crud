@@ -40,6 +40,20 @@ namespace EmployeeMgmt.Controllers
         return View(company);
        }
 
+       [HttpPost]
+       public IActionResult Edit(Company company)
+        {
+          if(ModelState.IsValid){
+            context.Companies.Update(company);
+            context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+          }
+         var companyTobeUpdated = context.Companies.
+         FirstOrDefault(comp=>comp.CompanyId==company.CompanyId);
+          
+         return View(company);
+       }
+
        public IActionResult Delete()
        {
         return RedirectToAction(nameof(Index));
