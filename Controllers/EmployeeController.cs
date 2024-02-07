@@ -35,9 +35,26 @@ namespace EmployeeMgmt.Controllers
         ViewBag.compaines = compaines;
         return View();
       }
+     
+      [HttpGet]
+      public IActionResult Edit(string emp_id)
+       { 
+        Console.WriteLine(emp_id);
+        return View();
+       }
 
-       public IActionResult Edit()
+       [HttpPost]
+       public IActionResult Edit(Employee employee)
        {
+        if(ModelState.IsValid){
+          var savedEmployee = context.Employees.FirstOrDefault(e=>e.Id.Equals(employee.Id));
+          if(savedEmployee==null) return View();
+          context.Employees.Update(employee);
+          context.SaveChanges();
+
+          return RedirectToAction(nameof(Index));
+        }
+
         return View();
        }
 
