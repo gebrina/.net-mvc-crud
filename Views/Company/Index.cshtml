@@ -28,7 +28,7 @@
                     <td title="@company.CompanyId">@company.CompanyId.ToString().Substring(0,20)...</td>
                     <td>@company.Name</td>
                     <td>@company.Address</td>
-                    <td><a asp-controller="Company" asp-action="Edit" class="btn btn-success">Edit</a></td>
+                    <td><a asp-controller="Company" asp-action="Edit" asp-route-comp_id="@company.CompanyId" class="btn btn-success">Edit</a></td>
                     <td><a asp-controller="Company" asp-action="Delete" class="btn btn-danger">Delete</a></td>
                 </tr>
                }

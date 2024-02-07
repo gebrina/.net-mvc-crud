@@ -32,9 +32,12 @@ namespace EmployeeMgmt.Controllers
         return View();
        }
 
-       public IActionResult Edit()
+       public IActionResult Edit(string comp_id)
        {
-        return View();
+        var company = context.Companies.FirstOrDefault(
+          company=>company.CompanyId.Equals(new Guid(comp_id))
+          );
+        return View(company);
        }
 
        public IActionResult Delete()
