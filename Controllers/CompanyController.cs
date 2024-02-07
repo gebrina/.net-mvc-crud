@@ -21,7 +21,7 @@ namespace EmployeeMgmt.Controllers
        }
  
        [HttpPost]
-       public IActionResult Add([FromBody] Company company)
+       public IActionResult Add(Company company)
        {
         if(ModelState.IsValid){
           context.Companies.Add(company);
