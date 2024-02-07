@@ -23,7 +23,12 @@ namespace EmployeeMgmt.Controllers
        [HttpPost]
        public IActionResult Add([FromBody] Company company)
        {
-        if(ModelState.IsValid) return RedirectToAction(nameof(Index));
+        if(ModelState.IsValid){
+          context.Companies.Add(company);
+          context.SaveChanges();
+          return RedirectToAction(nameof(Index));
+        };
+
         var employees = context.Employees.Where(e=>e.Company==null).ToArray();
         ViewBag.employees = employees;
         return View();
