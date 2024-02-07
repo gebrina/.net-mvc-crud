@@ -18,20 +18,7 @@
             <label asp-for="Address">Address</label>
             <input class="form-control bg-transparent" asp-for="Address" type="text">
         </div>
-        
-        @if(ViewBag?.employees?.Length>0)
-        {
-       <div class="form-group my-4">
-           <select multiple asp-for="Employees" id="" class="form-control bg-transparent">
-            <option value="null">Select Employees</option>
-            @foreach(var employee in ViewBag.employees)
-            {
-                <option value="@employee.Id">@employee.FirstName "-" @employee.LastName</option>
-            }
-           </select>
-        </div>
-        }
-
+    
        <button class="btn w-100 btn-primary">Save</button>
     </form>
    </div>

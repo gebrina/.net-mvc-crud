@@ -15,8 +15,6 @@ namespace EmployeeMgmt.Controllers
 
        public IActionResult Add()
        {
-        var employees = context.Employees.Where(e=>e.Company==null).ToArray();
-        ViewBag.employees = employees;
         return View();
        }
  
