@@ -54,8 +54,13 @@ namespace EmployeeMgmt.Controllers
          return View(company);
        }
 
-       public IActionResult Delete()
+       public IActionResult Delete(string comp_id)
        {
+        var company = context.Companies.FirstOrDefault(c=>c.CompanyId==new Guid(comp_id));
+        if(company==null) return RedirectToAction(nameof(Index));
+
+        context.Companies.Remove(company);
+        context.SaveChanges();
         return RedirectToAction(nameof(Index));
        }
     }

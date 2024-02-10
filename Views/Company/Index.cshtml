@@ -29,7 +29,7 @@
                     <td>@company.Name</td>
                     <td>@company.Address</td>
                     <td><a asp-controller="Company" asp-action="Edit" asp-route-comp_id="@company.CompanyId" class="btn btn-success">Edit</a></td>
-                    <td><a asp-controller="Company" asp-action="Delete" class="btn btn-danger">Delete</a></td>
+                    <td><a asp-controller="Company" asp-action="Delete" asp-route-comp_id="@company.CompanyId" onclick="return confirm('Delete company?')" class="btn btn-danger">Delete</a></td>
                 </tr>
                }
             </tbody>
