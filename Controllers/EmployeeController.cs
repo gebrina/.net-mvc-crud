@@ -59,7 +59,12 @@ namespace EmployeeMgmt.Controllers
         
          return View(employeeTobeUpdated);
        }
-       public IActionResult Delete(){
+       
+       public IActionResult Delete(string emp_id){
+        Employee employee = context.Employees.FirstOrDefault(e=>e.Id==new Guid(emp_id));
+        if(employee==null) return RedirectToAction(nameof(Index));
+        context.Employees.Remove(employee);
+        context.SaveChanges();
         return RedirectToAction(nameof(Index));
        }
     }

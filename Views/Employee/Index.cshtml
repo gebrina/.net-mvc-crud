@@ -33,7 +33,7 @@
           <td>@employee.PhoneNumber</td>
           <td>@employee.Company?.Name</td>
           <td><a asp-controller="Employee" asp-action="Edit" asp-route-emp_id="@employee.Id" class="btn btn-success">Edit</a></td>
-          <td><a asp-controller="Employee" asp-action="Delete" class="btn btn-danger">Delete</a></td>
+          <td><a asp-controller="Employee" onclick="return confirm('Delete employee?');" asp-action="Delete" asp-route-emp_id="@employee.Id" class="btn btn-danger">Delete</a></td>
          </tr>
         }
       </tbody>
